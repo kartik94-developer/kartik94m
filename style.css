@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #70c5ce;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: url('background.png') no-repeat center center/cover;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+#bird {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('bird.png') no-repeat center center/cover;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.pipe {
+    position: absolute;
+    width: 60px;
+    background-color: #000;
+    bottom: 0;
+}
+
+.pipe.top {
+    top: 0;
+    bottom: auto;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#final-score {
+    font-size: 24px;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#fly-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
